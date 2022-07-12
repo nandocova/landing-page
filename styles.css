@@ -1,48 +1,63 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 a {
     text-decoration: none;
+    color: beige;
+    padding-left: 16px;
 }
 
-.image .file {
-    width: 300px;
+.logo img {
+    height: 32px;
 }
 
 .header {
-    border: 1px solid red;
-    padding: 8px 64px;
+    background-color: #413323;
+    color: beige;
+    padding: 8px 96px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .intro {
-    border: 1px solid blue;
-    padding: 8px 64px;
-    display: flex;
+    background-color: #413323;
+    color: beige;
+    padding: 8px 96px;
+    display: flex;;
+    align-items: flex-start;
     justify-content: space-between;
+    flex: 1;
+    gap: 16px;
 }
 
-.intro.title {
+.title {
     flex: 1;
 }
 
-.intro.image {
-    flex: 1;
+h1 {
+    margin: 0;
+}
+
+.image .file {
+    width: 300px;    
 }
 
 .info {
-    border: 1px solid green;
-    padding: 8px 64px;
+    padding: 8px 96px;
 }
 
 .info .file {
-    width: 100px;
-    height: 100px;
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
     border: 4px solid black;
-    border-radius: 20px;
+    border-radius: 12px;
 }
 
 .icons {
@@ -55,13 +70,15 @@ ul {
 }
 
 li {
-    max-width: 200px;
+    max-width: 160px;
     text-align: center;
+    margin: 16px;
 }
 
 .quote {
-    border: 1px solid magenta;
+    background-color: #e7e1d6;
     padding: 8px 256px;
+    font-style: italic;
     display: flex;
     flex-direction: column;
 }
@@ -71,15 +88,30 @@ li {
 }
 
 .action {
-    border: 1px solid cyan;
-    padding: 8px 64px;
+    background-color: #977043;
+    margin: 32px 64px;
+    padding: 0 32px;
+    border-radius: 12px;
     display: flex;
+    gap: 32px;
     justify-content: space-between;
+    max-width: max-content;
+    align-self: center;
+}
+
+.button {
+    align-self: center;
+}
+
+button {
+    border-radius: 6px;
+    padding: 8px 16px;
 }
 
 .footer {
-    border: 1px solid yellow;
-    padding: 8px 64px;
+    padding: 8px 96px;
+    background-color: #413323;
+    color: #e7e1d6;
     display: flex;
     justify-content: center;
     align-items: center;
